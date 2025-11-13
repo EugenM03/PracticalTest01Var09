@@ -8,12 +8,58 @@
     tools:context=".PracticalTest01Var09MainActivity">
 
     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="#4DD"
+        android:gravity="center_vertical"
+        android:textSize="24sp"
+        android:id="@+id/main_title"
+        android:padding="10dp"
+        android:text="@string/app_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="208dp"
+        android:backgroundTint="#4dd"
+        android:text="ADD"
+        android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.943"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/main_title" />
+
+    <Button
+        android:id="@+id/east_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="200dp"
+        android:backgroundTint="#4dd"
+        android:text="COMPUTE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/add_button" />
+
+    <EditText
+        android:id="@+id/edit_text_1"
+        android:layout_width="294dp"
+        android:layout_height="57dp"
+        android:enabled="true"
+        android:textSize="16sp"
+        app:layout_constraintTop_toTopOf="@id/add_button"
+        tools:layout_editor_absoluteX="33dp" />
+
+    <EditText
+        android:id="@+id/edit_text_2"
+        android:layout_width="294dp"
+        android:layout_height="57dp"
+        android:enabled="false"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_1"
+        tools:layout_editor_absoluteX="33dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
