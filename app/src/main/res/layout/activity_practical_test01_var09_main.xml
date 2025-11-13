@@ -32,7 +32,7 @@
         app:layout_constraintTop_toBottomOf="@id/main_title" />
 
     <Button
-        android:id="@+id/east_button"
+        android:id="@+id/compute_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
@@ -44,21 +44,21 @@
         app:layout_constraintTop_toBottomOf="@id/add_button" />
 
     <EditText
-        android:id="@+id/edit_text_1"
-        android:layout_width="294dp"
+        android:id="@+id/next_term"
+        android:layout_width="190dp"
         android:layout_height="57dp"
         android:enabled="true"
         android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="@id/add_button"
-        tools:layout_editor_absoluteX="33dp" />
+        app:layout_constraintEnd_toStartOf="@+id/add_button"
+        app:layout_constraintTop_toTopOf="@id/add_button" />
 
     <EditText
-        android:id="@+id/edit_text_2"
+        android:id="@+id/all_terms"
         android:layout_width="294dp"
         android:layout_height="57dp"
         android:enabled="false"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/edit_text_1"
+        app:layout_constraintTop_toBottomOf="@id/next_term"
         tools:layout_editor_absoluteX="33dp" />
 
 
